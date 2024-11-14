@@ -1,0 +1,173 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Black Mesa</title>
+<link rel="icon" type="image/x-icon" href=ImgAttatched/Logo>
+</head>
+<header>
+<img src="ImgAttatched/Banner.png" style= "display: block; margin-left: auto; margin-right: auto; width: 35%;"> </img>
+</header>
+<style>
+body {margin:0;}
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.active {
+  background-color: #e69500;
+}
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active1, .collapsible:hover {
+  background-color: #ccc;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create a column layout with Flexbox */
+.row {
+  display: flex;
+}
+
+/* Left column (menu) */
+.left {
+  flex: 20%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+/* Right column (page content) */
+.right {
+  flex: 80%;
+  padding: 15px;
+}
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="BMRFIntMain.html">Main</a> 
+  <a  href="BMRFIntNews.html">News</a> 
+  <a class="active" href="BMRFIntRecords.html">Records</a> 
+<a href="BMRFIntComms.html">Comms</a>
+  <a href="BMRFHomePage.html">Logout</a>
+</div>
+<div class="row">
+  <div class="left" style="background-color:#bbb;">
+    <h2>Menu</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+    <ul id="myMenu">
+      <li><a href="BMRFIntRecords.html">How To Use</a></li>
+      <li><a href="RecordsGenSci.html">General Science</a></li>
+      <li><a href="RecordsRAS.html">RAS</a></li>
+      <li><a href="RecordsSecurity.html">Security</a></li>
+      <li><a href="RecordsSurvey.html">Survey</a></li>
+      <li><a class="active"href="RecordsAdmin.html">Administration</a></li>
+    </ul>
+  </div>
+  
+  <div class="right" style="background-color:#ddd;">
+    <h2>Administration</h2>
+    <p></p>
+    <p>The Administration records are used to keep reports, logs and announcements from Administration </p>
+    <p></p>
+    <p>To submit a document, contact any IA member</p>
+  </div>
+</div>
+<br><br><br>
+</body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
