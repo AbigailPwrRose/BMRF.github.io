@@ -57,9 +57,9 @@ function Autherise() {
 // ["",""]
 const ValidLogins = [["SethWilson98","6021-2505"],["AbygaleVermillion01","4356-3497"],["WallaceBreen55","0583-6032"],["IssacKliener80","2958-3028"],["GordonFreeman02","9634-2985"],["EliVance19","9725-4086"]];
 var In = document.getElementById("Login");
-var ID2 = In.elements[0].value;
+var I_D = In.elements[0].value;
 var Code = In.elements[1].value;
-var Login = [ID2,Code];
+var Login = [I_D,Code];
 var Auth = 0;
 for (let x in ValidLogins) {
 if (Login[0] == ValidLogins[x][0]) {if (Login[1] == ValidLogins[x][1]) {Auth = 1}};
