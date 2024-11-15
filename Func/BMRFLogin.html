@@ -55,8 +55,11 @@ body {margin:0;}
 function LoginFunc() {
         let inputID = document.getElementById("validate1").value;
         let inputCode = document.getElementById("validate2").value;
-        let IdList = ["SethWilson98","AbygaleVermillion01","WallaceBreen55","IssacKliener80","GordonFreeman02","EliVance19","JackMorrison92","StevenStone45","FranklinPolonski24","AndrewEvel06",];
-        let CodeList = ["6021-2505","4356-3497","0583-6032","2958-3028","9634-2985","9725-4086","3953-1042","0149-5391","1101-1010","0999-2015"];
+        let IdList = ["SethWilson98","AbygaleVermillion01","WallaceBreen55",
+                      "IssacKliener80","GordonFreeman02","EliVance19","JackMorrison92",
+                      "StevenStone45","FranklinPolonski24","AndrewEvel06","DavidJones72"];
+        let CodeList = ["6021-2505","4356-3497","0583-6032","2958-3028","9634-2985","9725-4086",
+                        "3953-1042","0149-5391","1101-1010","0999-2015","2952-0192"];
         for (let i = 0; i < IdList.length; i++) {
         var Auth = 0;
         if (inputID === IdList[i]) {Auth +=1;};
