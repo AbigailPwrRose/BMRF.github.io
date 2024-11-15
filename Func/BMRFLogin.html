@@ -1,0 +1,68 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Black Mesa</title>
+<link rel="icon" type="image/x-icon" href=ImgAttatched/Logo>
+</head>
+<header>
+<img src="ImgAttatched/Banner.png" style= "display: block; margin-left: auto; margin-right: auto; width: 35%;"> </img>
+</header>
+<style>
+body {margin:0;}
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #e69500;
+}
+</style>
+<body>
+
+<div class="icon-bar">
+  <a href="BMRFHomePage.html">About Us</a> 
+  <a href="BMRFHistory.html">History</a> 
+  <a href="BMRFStaff.html">Staff</a> 
+  <a class="active" href="BMRFLogin.html">Login</a>
+</div>
+<br><br><br>
+<h2>Please log in to continue</h2>
+
+<form id="Login">
+    Black Mesa ID : <input type="text" id="validate1" placeholder=""></input><br>
+    Access Code : <input type="text" id="validate2" placeholder=""></input><br>
+    <button type="button" onclick="LoginFunc()">Submit</button>
+</form>
+</body>
+<script>
+function LoginFunc() {
+        let inputID = document.getElementById("validate1").value;
+        let inputCode = document.getElementById("validate2").value;
+        let IdList = ["SethWilson98","AbygaleVermillion01","WallaceBreen55","IssacKliener80","GordonFreeman02","EliVance19"];
+        let CodeList = ["6021-2505","4356-3497","0583-6032","2958-3028","9634-2985","9725-4086"];
+        for (let i = 0; i < IdList.length; i++) {
+        var Auth = 0;
+        if (inputID === IdList[i]) {Auth +=1;};
+        if (inputCode === CodeList[i]) {Auth +=1;};
+        if (Auth === 2) {window.location.href="BMRFIntMain.html";};
+        };
+    }
+</script>
+</html>
