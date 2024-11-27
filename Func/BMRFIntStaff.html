@@ -52,7 +52,7 @@ th,td {
   <a href="BMRFHomePage.html">Logout</a>
 </div>
 <br><br><br>
-<button type="button" onclick="loadStaff()">Load Staff Database</button>
+<button type="button" onclick="loadDoc()">Load Staff Database</button>
 <br>
 <table id="demo"></table>
 <p id="demo1"></p>
@@ -74,7 +74,7 @@ function loadDoc() {
 }
 
 function loadStaff(xml) {
-  const xmlDoc = xml.responseXML;
+  var xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
   const x = xmlDoc.getElementsByTagName("NID");
   document.getElementById("demo3").innerHTML = "Confirmed";
