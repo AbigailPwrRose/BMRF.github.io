@@ -63,7 +63,7 @@ th,td {
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    document.getElementById("demo2").innerHTML = this;
+    document.getElementById("demo1").innerHTML = this;
     loadStaff(this);
   };
   xhttp.open("GET", "StaffDatabase.xml",true);
@@ -71,11 +71,11 @@ function loadDoc() {
 }
 
 function loadStaff(xml) {
-  document.getElementById("demo4").innerHTML = "Confirmed4";
+  document.getElementById("demo2").innerHTML = "Confirmed2";
   const xmlDoc = xml.responseXML;
-  document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
-  const x = xmlDoc.getElementsByTagName("ID");
-  document.getElementById("demo3").innerHTML = "Confirmed";
+  document.getElementById("demo3").innerHTML = xml.responseXML + "Tralalalaz";
+  var x = xmlDoc.getElementsByTagName("ID");
+  document.getElementById("demo4").innerHTML = "Confirmed";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
