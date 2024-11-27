@@ -62,6 +62,7 @@ th,td {
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
+     document.getElementById("demo2").innerHTML = "Confirmed2 | "+this ;
     loadStaff(this);
   };
   xhttp.open("GET", "StaffDatabase.txt");
@@ -72,7 +73,6 @@ function loadStaff(xml) {
   loadDoc();
   const xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
-  document.getElementById("demo2").innerHTML = "Confirmed";
   const x = xmlDoc.getElementsByTagName("NID");
   document.getElementById("demo3").innerHTML = "Confirmed";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
