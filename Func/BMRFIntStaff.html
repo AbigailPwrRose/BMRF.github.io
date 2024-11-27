@@ -64,13 +64,13 @@ function loadDoc() {
   xhttp.send();
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-     document.getElementById("demo2").innerHTML = "Confirmed2 | "+this ;
     loadStaff(this);
   };
+  xhttp.open("GET", "StaffDatabase.txt");
+  xhttp.send();
 }
 
 function loadStaff(xml) {
-  loadDoc();
   const xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
   const x = xmlDoc.getElementsByTagName("NID");
