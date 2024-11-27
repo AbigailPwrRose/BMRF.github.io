@@ -72,9 +72,9 @@ function loadDoc() {
 }
 
 function loadStaff(xml) {
-  var xmlDoc = xml.responseXML;
+  const xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
-  const x = xmlDoc.getElementsByTagName("NID");
+  const x = xmlDoc.getElementsByTagName("ID");
   document.getElementById("demo3").innerHTML = "Confirmed";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
