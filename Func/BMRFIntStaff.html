@@ -73,7 +73,7 @@ function loadStaff(xml) {
   const xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xmlDoc + "Tralalalaz";
   document.getElementById("demo2").innerHTML = "Confirmed";
-  const x = xmlDoc.getElementsByTagName("CATALOG");
+  const x = xmlDoc.getElementsByTagName("NID");
   document.getElementById("demo3").innerHTML = "Confirmed";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
