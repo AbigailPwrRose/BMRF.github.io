@@ -74,8 +74,8 @@ function loadStaff(xml) {
   document.getElementById("demo1").innerHTML = xmlDoc;
   document.getElementById("demo2").innerHTML = "Confirmed";
   const x = xmlDoc.getElementsByTagName("NID");
-  let table="<tr><th>Staff</th><th>Table</th></tr>";
   document.getElementById("demo3").innerHTML = "Confirmed";
+  let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue + " " + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
