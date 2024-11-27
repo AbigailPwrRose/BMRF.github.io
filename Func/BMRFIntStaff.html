@@ -61,8 +61,6 @@ th,td {
 <p id="demo4"></p>
 <script>
 function loadDoc() {
-  xhttp.open("GET", "StaffDatabase.txt");
-  xhttp.send();
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     document.getElementById("demo2").innerHTML = "Confirmed2";
