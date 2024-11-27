@@ -1,0 +1,80 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Black Mesa</title>
+<link rel="icon" type="image/x-icon" href=ImgAttatched/Logo>
+</head>
+<header>
+<img src="ImgAttatched/Banner.png" style= "display: block; margin-left: auto; margin-right: auto; width: 35%;"> </img>
+</header>
+<style>
+body {margin:0;}
+
+.Navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.Navbar a {
+  float: left;
+  width: 16.6%;
+  text-align: center;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 32px;
+}
+
+.Navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #e69500;
+}
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
+<body>
+
+<div class="Navbar">
+  <a href="BMRFIntMain.html">Main</a> 
+  <a  href="BMRFIntNews.html">News</a> 
+  <a href="BMRFIntRecords.html">Records</a> 
+  <a class="active" href="BMRFIntStaff.html">Staff</a> 
+<a href="BMRFIntComms.html">Comms</a>
+  <a href="BMRFHomePage.html">Logout</a>
+</div>
+<br><br><br>
+<button type="button" onclick="loadDoc()">Load Staff Database</button>
+<br>
+<table id="demo"></table>
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onload = function() {
+    LoadStaff(this);
+  };
+  xhttp.open("GET", "StaffDatabase.txt");
+  xhttp.send();
+  document.getElementById("demo").innerHTML = xhttp.responseText;
+}
+function LoadStaff(xml) {
+  const xmlDoc = xml.responseXML;
+  const x = xmlDoc.getElementsByTagName("NID");
+  let table="<tr><th>Staff</th><th>Table</th></tr>";
+  for (let i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue + " " + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
+    "</td><td>" + x[i].getElementsByTagName("Rank")[0].childNodes[0].nodeValue + "</td></tr>";
+  };
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+</body>
