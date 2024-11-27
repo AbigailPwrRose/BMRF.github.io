@@ -68,10 +68,10 @@ function loadDoc() {
   };
   xhttp.open("GET", "StaffDatabase.xml");
   xhttp.send();
-    document.getElementById("demo4").innerHTML = "Confirmed4";
 }
 
 function loadStaff(xml) {
+  document.getElementById("demo4").innerHTML = "Confirmed4";
   const xmlDoc = xml.responseXML;
   document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
   const x = xmlDoc.getElementsByTagName("ID");
