@@ -71,7 +71,7 @@ function loadDoc() {
 function loadStaff(xml) {
   loadDoc();
   const xmlDoc = xml.responseXML;
-  document.getElementById("demo1").innerHTML = xmlDoc + "Tralalalaz";
+  document.getElementById("demo1").innerHTML = xml.responseXML + "Tralalalaz";
   document.getElementById("demo2").innerHTML = "Confirmed";
   const x = xmlDoc.getElementsByTagName("NID");
   document.getElementById("demo3").innerHTML = "Confirmed";
