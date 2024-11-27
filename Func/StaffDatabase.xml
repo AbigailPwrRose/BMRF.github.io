@@ -1,22 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <CATALOG>
-<NID>
-    <FName>Abygale</FName>
-    <LName>Vermillion</LName>
-    <Clearance>6</Clearance>
-    <Rank>Director</Rank>
-    <Division1>Science</Division1>
-    <Division2>Body-Modifications</Division2>
-    <WebID>AVermillion04</WebID>
-    <Access>13</Access>
-</NID>
-<NID>
-    <FName>Franklin</FName>
-    <LName>Polonski</LName>
-    <Clearance>9</Clearance>
-    <Rank>Director</Rank>
-    <Division1>Science</Division1>
-    <Division2>Robotics</Division2>
-    <WebID>FPolonski42</WebID>
-    <Access>42</Access>
-</NID>
+    <ID>
+        <FName>Abygale</FName>
+        <LName>Vermillion</LName>
+        <Clearance>6</Clearance>
+        <Rank>Director</Rank>
+        <Division1>Science</Division1>
+        <Division2>Body-Modifications</Division2>
+        <WebID>AVermillion04</WebID>
+        <Access>13</Access>
+    </ID>
+    <ID>
+        <FName>Franklin</FName>
+        <LName>Polonski</LName>
+        <Clearance>9</Clearance>
+        <Rank>Director</Rank>
+        <Division1>Science</Division1>
+        <Division2>Robotics</Division2>
+        <WebID>FPolonski42</WebID>
+        <Access>42</Access>
+    </ID>
+    <ID>
+        <FName>Gordon</FName>
+        <LName>Freeman</LName>
+        <Clearance>5</Clearance>
+        <Rank>Pathfinder</Rank>
+        <Division1>Survey</Division1>
+        <Division2>AMS</Division2>
+        <WebID>GFreeman01</WebID>
+        <Access>42</Access>
+    </ID>
 </CATALOG>
+<?/xml?>
