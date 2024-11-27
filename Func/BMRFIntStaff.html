@@ -58,16 +58,19 @@ th,td {
 <p id="demo1"></p>
 <p id="demo2"></p>
 <p id="demo3"></p>
+<p id="demo4"></p>
 <script>
 function loadDoc() {
   xhttp.open("GET", "StaffDatabase.txt");
   xhttp.send();
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
+    document.getElementById("demo2").innerHTML = "Confirmed2";
     loadStaff(this);
   };
   xhttp.open("GET", "StaffDatabase.txt");
   xhttp.send();
+    document.getElementById("demo4").innerHTML = "Confirmed4";
 }
 
 function loadStaff(xml) {
