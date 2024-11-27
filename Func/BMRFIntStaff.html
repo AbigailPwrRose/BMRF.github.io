@@ -52,7 +52,7 @@ th,td {
   <a href="BMRFHomePage.html">Logout</a>
 </div>
 <br><br><br>
-<button type="button" onclick="loadDoc('StaffDatabase.xml')">Load Staff Database</button>
+<button type="button" onclick="loadDoc()">Load Staff Database</button>
 <br>
 <table id="demo"></table>
 <p id="demo1"></p>
@@ -60,22 +60,22 @@ th,td {
 <p id="demo3"></p>
 <p id="demo4"></p>
 <script>
-function loadDoc(URL) {
+function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
     document.getElementById("demo1").innerHTML = this;
     loadStaff(this);
   };
-  xhttp.open("GET",   URL ,true);
+  xhttp.open("GET","StaffDatabase.xml",true);
   xhttp.send();
 }
 
 function loadStaff(xml) {
   document.getElementById("demo2").innerHTML = "Confirmed2";
   const xmlDoc = xml.responseXML;
-  document.getElementById("demo3").innerHTML = xml.responseXML + "Tralalalaz";
+  document.getElementById("demo3").innerHTML = xml + "Tralalalaz";
   var x = xmlDoc.getElementsByTagName("ID");
-  document.getElementById("demo4").innerHTML = "Confirmed";
+  document.getElementById("demo4").innerHTML = "Confirmed4";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
