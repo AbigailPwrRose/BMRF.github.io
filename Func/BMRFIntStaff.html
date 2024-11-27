@@ -55,20 +55,27 @@ th,td {
 <button type="button" onclick="loadDoc()">Load Staff Database</button>
 <br>
 <table id="demo"></table>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
 <script>
 function loadDoc() {
   const xhttp = new XMLHttpRequest();
   xhttp.onload = function() {
-    LoadStaff(this);
+    loadStaff(this);
   };
   xhttp.open("GET", "StaffDatabase.txt");
   xhttp.send();
-  document.getElementById("demo").innerHTML = xhttp.responseText;
+loadStaff(this);
 }
-function LoadStaff(xml) {
+
+function loadStaff(xml) {
   const xmlDoc = xml.responseXML;
+  document.getElementById("demo1").innerHTML = xmlDoc;
+  document.getElementById("demo2").innerHTML = "Confirmed";
   const x = xmlDoc.getElementsByTagName("NID");
   let table="<tr><th>Staff</th><th>Table</th></tr>";
+  document.getElementById("demo3").innerHTML = "Confirmed";
   for (let i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
     x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue + " " + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
