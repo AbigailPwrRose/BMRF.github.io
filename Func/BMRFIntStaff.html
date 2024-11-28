@@ -62,17 +62,17 @@ th,td {
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo1").innerHTML = Node1;
+      document.getElementById("demo1").innerHTML = "Node1";
     myFunction(this);
     }
 };
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
-  document.getElementById("demo2").innerHTML = Node2;
+  document.getElementById("demo2").innerHTML = "Node2";
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var i = 1;
-    document.getElementById("demo").innerHTML = Node2;
+    document.getElementById("demo3").innerHTML = "Node2";
     document.getElementById("demo").innerHTML =
     xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
 }
