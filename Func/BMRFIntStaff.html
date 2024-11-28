@@ -72,9 +72,9 @@ xhttp.send();
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var i = 1;
-    document.getElementById("demo3").innerHTML = "Node2";
+    document.getElementById("demo3").innerHTML = "Node3";
     document.getElementById("demo").innerHTML =
-    xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
+    xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue;
 }
 </script>
 </body>
