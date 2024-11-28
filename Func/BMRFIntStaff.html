@@ -71,7 +71,7 @@ xhttp.send();
   document.getElementById("demo2").innerHTML = "Node2";
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
-    var i = 0;
+    var i = 1;
     document.getElementById("demo3").innerHTML = "Node3";
     document.getElementById("demo").innerHTML =
     xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue;
