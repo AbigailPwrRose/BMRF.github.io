@@ -65,12 +65,13 @@ xhttp.onreadystatechange = function() {
     myFunction(this);
     }
 };
-function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
-    document.getElementById("demo").innerHTML =
-    xmlDoc.getElementsByTagName("ID")[1].childNodes[0].nodeValue;
-}
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
+function myFunction(xml) {
+    var xmlDoc = xml.responseXML;
+    var i = 1;
+    document.getElementById("demo").innerHTML =
+    xmlDoc.getElementsByTagName("ID")[i].childNodes[0].nodeValue;
+}
 </script>
 </body>
