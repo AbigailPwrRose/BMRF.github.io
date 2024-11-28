@@ -72,8 +72,8 @@ function loadDoc() {
 function loadStaff(xml) {
   document.getElementById("demo2").innerHTML = "Confirmed2";
   var xmlDoc = xml.responseXML;
-  document.getElementById("demo3").innerHTML = xmlDoc.getElementsByTagName("ID")[0].childNodes[0].nodeValue; + " Tralalalaz";
-  var x = xmlDoc
+  document.getElementById("demo3").innerHTML = xmlDoc.getElementsByTagName("ID")[0].childNodes[0].nodeValue + " Tralalalaz";
+  var x = xmlDoc;
   document.getElementById("demo4").innerHTML = "Confirmed4";
   let table="<tr><th>Staff</th><th>Table</th></tr>";
   for (let i = 0; i <x.length; i++) { 
