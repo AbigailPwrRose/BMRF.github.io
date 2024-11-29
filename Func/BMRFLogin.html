@@ -58,9 +58,11 @@ body {margin:0;}
 <script>
 function LoginStage1() {
   var xhttp = new XMLHttpRequest();
-  xhttp.onload = function() {
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
     LoginStage2(this);
     document.getElementById("demo2").innerHTML = "Test2"
+    }
   };
   document.getElementById("demo1").innerHTML = "Test1"
 xhttp.open("GET", "StaffDatabase.xml", true);
