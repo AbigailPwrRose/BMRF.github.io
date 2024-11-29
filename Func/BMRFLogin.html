@@ -50,10 +50,6 @@ body {margin:0;}
     Access Code : <input type="text" id="validate2" placeholder="0000-0000"></input><br>
     <button type="button" onclick="LoginStage1()">Submit</button>
 </form>
-  <p id="demo1"></p>
-  <p id="demo2"></p>
-  <p id="demo3"></p>
-  <p id="demo4"></p>
 </body>
 <script>
 function LoginStage1() {
@@ -67,23 +63,17 @@ xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 }
 function LoginStage2(xml) {
-  document.getElementById("demo1").innerHTML = "Test1"
   var xmlDoc = xml.responseXML;
-  document.getElementById("demo2").innerHTML = "Test2";
   var x = xmlDoc.getElementsByTagName("record");
   let inputID = document.getElementById("validate1").value;
   let inputCode = document.getElementById("validate2").value;
   var i;
-  document.getElementById("demo3").innerHTML = "Test3";
-  var TextL = "";
   for (let i = 0; i < x.length; i++) {
     var Auth = 0;
-    TextL += x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue +" " +x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue+", ";
     if (inputID === x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue) {Auth +=1;};
     if (inputCode === x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue) {Auth +=1;};
     if (Auth === 2) {window.location.href="BMRFIntMain.html";};
         };
-  document.getElementById("demo4").innerHTM = TextL;
     }
 </script>
 </html>
