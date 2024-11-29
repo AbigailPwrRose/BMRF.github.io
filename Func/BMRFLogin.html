@@ -71,12 +71,12 @@ function LoginStage2(XML) {
   let inputID = document.getElementById("validate1").value;
   let inputCode = document.getElementById("validate2").value;
   var i;
+  document.getElementById("demo2").innerHTML = "Test2";
   var xmlDoc = xml.responseXML;
+  document.getElementById("demo3").innerHTML = "Test3";
   var x = xmlDoc.getElementsByTagName("record");
   var TextL = "";
-  document.getElementById("demo2").innerHTML = "Test2";
   for (let i = 0; i < x.length; i++) {
-    document.getElementById("demo3").innerHTML = "Test3";
     var Auth = 0;
     TextL += x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue +" " +x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue+", ";
     if (inputID === x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue) {Auth +=1;};
