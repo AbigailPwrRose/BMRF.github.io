@@ -70,12 +70,13 @@ xhttp.send();
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
     var i = 1;
-    var table="<tr><th>Artist</th><th>Title</th></tr>";
+    var x = xmlDoc.getElementsByTagName("Record");
+    var table="<tr><th>Staff List</th></tr>";
     for (let i = 0; i < xmlDoc.length; i++) {
       table += "<tr><td>" +
-    xmlDoc[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +
     "</td><td>" +
-    xmlDoc[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
+    x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
     "</td></tr>";
   };
   document.getElementById("demo").innerHTML = table
