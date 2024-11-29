@@ -53,14 +53,10 @@ body {margin:0;}
   <p id="demo"></p>
 </body>
 <script>
-function LoginStage1() {
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-  if (this.readyState == 4 && this.status == 200) {
+  xhttp.onload = function() {
     LoginStage2(this);
-    }
   };
-}
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 function LoginStage2(XML) {
@@ -71,7 +67,7 @@ function LoginStage2(XML) {
   var x = xmlDoc.getElementsByTagName("record");
   for (let i = 0; i < x.length; i++) {
     var Auth = 0;
-    document.getElementById("demo").innerHTML += x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue +" " +x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue+", "
+    document.getElementById("demo").innerHTML += x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue +" " +x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue+", ";
     if (inputID === x[i].getElementsByTagName("WebID")[0].childNodes[0].nodeValue) {Auth +=1;};
     if (inputCode === x[i].getElementsByTagName("Access")[0].childNodes[0].nodeValue) {Auth +=1;};
     if (Auth === 2) {window.location.href="BMRFIntMain.html";};
