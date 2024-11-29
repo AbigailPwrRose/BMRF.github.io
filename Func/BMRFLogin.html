@@ -66,11 +66,11 @@ function LoginStage1() {
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 }
-function LoginStage2(XML) {
+function LoginStage2(xml) {
   document.getElementById("demo1").innerHTML = "Test1"
   var xmlDoc = xml.responseXML;
-  var x = xmlDoc.getElementsByTagName("record");
   document.getElementById("demo2").innerHTML = "Test2";
+  var x = xmlDoc.getElementsByTagName("record");
   let inputID = document.getElementById("validate1").value;
   let inputCode = document.getElementById("validate2").value;
   var i;
