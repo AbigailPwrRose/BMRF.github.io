@@ -1,5 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <dataset>
     <record><FName>Franklin</FName><LName>Polonski</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Robotics</Division><Title>Director</Title><WebID>FPolonski11</WebID><Access>0111-1001</Access></record>
-    <record><FName>Abygale</FName><LName>Vermillion</LName><Clearence>6</Clearence><Sector>A</Sector><Division>Body-Modifications</Division><Title>Dirdctor</Title><WebID>AVermillion01</WebID><Access>532-6952</Access></record>
+    <record><FName>Abygale</FName><LName>Vermillion</LName><Clearence>6</Clearence><Sector>A</Sector><Division>Body-Modifications</Division><Title>Director</Title><WebID>AVermillion01</WebID><Access>5322-6952</Access></record>
+    <record><FName>Richard</FName><LName>Lawson</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Robotics</Division><Title>Director</Title><WebID>RLawson94</WebID><Access>1095-2085</Access></record>
+    <record><FName>Greg</FName><LName>Mansouls</LName><Clearence>8</Clearence><Sector>Lambda</Sector><Division>Survey</Division><Title>Pathfinder</Title><WebID>GMansouls35</WebID><Access>1932-1041</Access></record>
+    <record><FName>[???]</FName><LName>Blue</LName><Clearence>7</Clearence><Sector>C</Sector><Division>Robotics</Division><Title>Director</Title><WebID>KBlue05</WebID><Access>5932-1053</Access></record>
+    <record><FName>David</FName><LName>Issac</LName><Clearence>5</Clearence><Sector>E</Sector><Division>Biology</Division><Title>Sr Researcher</Title><WebID>DIssac63</WebID><Access>2052-5895</Access></record>
+    <record><FName>Jack</FName><LName>Elliot</LName><Clearence>2</Clearence><Sector>D</Sector><Division>Accounting</Division><Title>Accountant</Title><WebID>JElliot14</WebID><Access>5329-2968</Access></record>
+    <record><FName>Jack</FName><LName>Morrison</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Weapons R&amp;D</Division><Title>Sr Researcher</Title><WebID>JMorrison42</WebID><Access>0328-8461</Access></record>
+    <record><FName>Maxwell</FName><LName>Ladays</LName><Clearence>8</Clearence><Sector>A</Sector><Division>Archives</Division><Title>Director</Title><WebID>MLadays84</WebID><Access>2974-5849</Access></record>
+    <record><FName>Seth</FName><LName>Wilson</LName><Clearence>9</Clearence><Sector>F</Sector><Division>Anomalous Studies</Division><Title>Director</Title><WebID>SWilson12</WebID><Access>8246-9235</Access></record>
+    <record><FName>Fredrick</FName><LName>Straus</LName><Clearence>8</Clearence><Sector>F</Sector><Division>General Science</Division><Title>Sr Researcher</Title><WebID>FStraus59</WebID><Access>1425-3291</Access></record>
+    <record><FName>Jason</FName><LName>Malachi</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Meteorology</Division><Title>Sr Researcher</Title><WebID>JMalachi95</WebID><Access>2515-6329</Access></record>
+    <record><FName>Eli</FName><LName>Vance</LName><Clearence>7</Clearence><Sector>AMS</Sector><Division>AMS</Division><Title>Sr Researcher</Title><WebID>EVance25</WebID><Access>2591-8593</Access></record>
 </dataset>
