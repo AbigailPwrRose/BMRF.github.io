@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CATALOG>
-    <ID>
-        <FName>Abygale</FName>
-        <LName>Vermillion</LName>
-        <Clearance>6</Clearance>
-        <Rank>Director</Rank>
-        <Division1>Science</Division1>
-        <Division2>Body-Modifications</Division2>
-        <WebID>AVermillion04</WebID>
-        <Access>13</Access>
-    </ID>
-    <ID>
-        <FName>Franklin</FName>
-        <LName>Polonski</LName>
-        <Clearance>9</Clearance>
-        <Rank>Director</Rank>
-        <Division1>Science</Division1>
-        <Division2>Robotics</Division2>
-        <WebID>FPolonski42</WebID>
-        <Access>42</Access>
-    </ID>
-    <ID>
-        <FName>Gordon</FName>
-        <LName>Freeman</LName>
-        <Clearance>5</Clearance>
-        <Rank>Pathfinder</Rank>
-        <Division1>Survey</Division1>
-        <Division2>AMS</Division2>
-        <WebID>GFreeman01</WebID>
-        <Access>42</Access>
-    </ID>
-</CATALOG>
+<dataset>
+    <record><FName>Franklin</FName><LName>Polonski</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Robotics</Division><Title>Director</Title><WebID>FPolonski11</WebID><Access>0111-1001</Access></record>
+    <record><FName>Abygale</FName><LName>Vermillion</LName><Clearence>6</Clearence><Sector>A</Sector><Division>Body-Modifications</Division><Title>Dirdctor</Title><WebID>AVermillion01</WebID><Access>532-6952</Access></record>
+</dataset>
 <?/xml?>
