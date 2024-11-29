@@ -74,7 +74,7 @@ function myFunction(xml) {
   var table="<tr><th>Name</th><th>Title</th></tr>";
   var x = xmlDoc.getElementsByTagName("Record");
   document.getElementById("demo2").innerHTML = "Confirmed 1"
-  for (i = 0; i <x.length; i++) { 
+  for (i = 0; i <xmlDoc.length; i++) { 
     table += "<tr><td>" +x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +
     "</td><td>" + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +"</td></tr>";
     Test += xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue;+" , ";
