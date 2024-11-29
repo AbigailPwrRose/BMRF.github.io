@@ -68,13 +68,13 @@ xhttp.send();
 }
 function LoginStage2(XML) {
   document.getElementById("demo1").innerHTML = "Test1"
+  var xmlDoc = xml.responseXML;
+  var x = xmlDoc.getElementsByTagName("record");
+  document.getElementById("demo2").innerHTML = "Test2";
   let inputID = document.getElementById("validate1").value;
   let inputCode = document.getElementById("validate2").value;
   var i;
-  document.getElementById("demo2").innerHTML = "Test2";
-  var xmlDoc = xml.responseXML;
   document.getElementById("demo3").innerHTML = "Test3";
-  var x = xmlDoc.getElementsByTagName("record");
   var TextL = "";
   for (let i = 0; i < x.length; i++) {
     var Auth = 0;
