@@ -56,8 +56,6 @@ th,td {
 <table id="demo"></table>
 <p id="demo1"></p>
 <p id="demo2"></p>
-<p id="demo3"></p>
-<p id="demo4"></p>
 <script>
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
@@ -70,7 +68,7 @@ xhttp.send();
 function myFunction(xml) {
     var i;
   var xmlDoc = xml.responseXML;
-  var table="<tr><th>Artist</th><th>Title</th></tr>";
+  var table="<tr><th>Name</th><th>Title</th></tr>";
   var x = xmlDoc.getElementsByTagName("Record");
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +
@@ -78,7 +76,8 @@ function myFunction(xml) {
     "</td><td>" +
     x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
     "</td></tr>";
-  }
+    document.getElementById("demo1").innerHTML = x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue+" sfa"
+  };
   document.getElementById("demo").innerHTML = table;
 } 
 </script>
