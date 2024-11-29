@@ -64,8 +64,7 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 function myFunction(xml) {
-    var i;
-  var Teset = "";
+  var i;
   var xmlDoc = xml.responseXML;
   var x = xmlDoc.getElementsByTagName("record");
   var table="<tr><th>Name</th><th>Surname</th><th>Title</th><th>Clearance</th><th>Sector</th><th>Divsion</th></tr>";
