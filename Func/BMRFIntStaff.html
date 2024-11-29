@@ -69,19 +69,19 @@ xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 function myFunction(xml) {
     var i;
-  var Test = "";
+  var Teset = "";
   var xmlDoc = xml.responseXML;
   var table="<tr><th>Name</th><th>Title</th></tr>";
   document.getElementById("demo2").innerHTML = "Confirmed 1";
   for (i = 0; i <xmlDoc.length; i++) { 
     table += "<tr><td>" +xmlDoc[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +
     "</td><td>" + xmlDoc[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +"</td></tr>";
-    Test += xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue;+" , ";
+    Teset += xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue+" , ";
     document.getElementById("demo4").innerHTML ="Confirmed3" ;
   };
   document.getElementById("demo3").innerHTML ="Confirmed2" ;
   document.getElementById("demo").innerHTML = table;
-  document.getElementById("demo1").innerHTML = Test;
+  document.getElementById("demo1").innerHTML = Teset;
 } 
 </script>
 </body>
