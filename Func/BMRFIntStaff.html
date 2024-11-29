@@ -68,12 +68,17 @@ xhttp.onreadystatechange = function() {
 xhttp.open("GET", "StaffDatabase.xml", true);
 xhttp.send();
 function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
-    var i = 1;
-    var table="<tr><th>Staff List</th></tr>";
-    for (let i = 0; i < xmlDoc.length; i++) {
-      table += "<tr><td>" +xmlDoc.getElementsByTagName("FName")[i].childNodes[0].nodeValue +"</td><td>" +xmlDoc.getElementsByTagName("LName")[i].childNodes[0].nodeValue +"</td></tr>";
-  };
+    var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Artist</th><th>Title</th></tr>";
+  var x = xmlDoc.getElementsByTagName("Record");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
   document.getElementById("demo").innerHTML = table;
 } 
 </script>
