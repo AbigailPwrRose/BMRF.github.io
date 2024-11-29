@@ -75,7 +75,7 @@ function myFunction(xml) {
   var table="<tr><th>Name</th><th>Surname</th><th>Title</th><th>Clearance</th><th>Sector</th><th>Divsion</th></tr>";
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +"</td><td>" + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue+"</td><td>" 
-      + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue +"</td><td>" + x[i].getElementsByTagName("Clearance")[0].childNodes[0].nodeValue+"</td><td>" + 
+      + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue +"</td><td>" + x[i].getElementsByTagName("Clearence")[0].childNodes[0].nodeValue+"</td><td>" + 
       "Sector "+x[i].getElementsByTagName("Sector")[0].childNodes[0].nodeValue +"</td><td>" 
       + x[i].getElementsByTagName("Division")[0].childNodes[0].nodeValue+"</td></tr>";
   };
