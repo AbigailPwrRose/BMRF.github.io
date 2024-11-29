@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
-    <record><FName>Franklin</FName><LName>Polonski</LName><Clearence>9</Clearence><Sector>A</Sector><Division>Robotics</Division><Title>Director</Title><WebID>FPolonski11</WebID><Access>0111-1001</Access></record>
-    <record><FName>Abygale</FName><LName>Vermillion</LName><Clearence>6</Clearence><Sector>A</Sector><Division>Body-Modifications</Division><Title>Dirdctor</Title><WebID>AVermillion01</WebID><Access>532-6952</Access></record>
+    <record><FName>Franklin</FName><LName>Polonski</LName><Clearence>A-9</Clearence><Sector>A</Sector><Division>Robotics</Division><Title>Director</Title><WebID>FPolonski11</WebID><Access>0111-1001</Access></record>
+    <record><FName>Abygale</FName><LName>Vermillion</LName><Clearence>A-6</Clearence><Sector>A</Sector><Division>Body-Modifications</Division><Title>Dirdctor</Title><WebID>AVermillion01</WebID><Access>532-6952</Access></record>
 </dataset>
 <?/xml?>
