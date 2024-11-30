@@ -29,5 +29,4 @@
     <record><FName>Hank</FName><LName>Anderson</LName><Clearence>5</Clearence><Sector>All</Sector><Division>Security</Division><Title>Cadet</Title><WebID>HAnderson74</WebID><Access>3296-1289</Access></record>
     <record><FName>Amethyst</FName><LName>Ravenscyningdōm</LName><Clearence>3</Clearence><Sector>D</Sector><Division>Archives</Division><Title>Jr Secretary</Title><WebID>ARavenscyningdom81</WebID><Access>8731-5892</Access></record>
     <record><FName>Joseph</FName><LName>Newel</LName><Clearence>7</Clearence><Sector>F</Sector><Division>Medical</Division><Title>Director</Title><WebID>JNewel21</WebID><Access>2316-9231</Access></record>
-    <record><FName>Joseph</FName><LName>Newel</LName><Clearence>7</Clearence><Sector>F</Sector><Division>Medical</Division><Title>Diretcor</Title><WebID>JNewel22</WebID><Access>2316-9231</Access></record>
 </dataset>
