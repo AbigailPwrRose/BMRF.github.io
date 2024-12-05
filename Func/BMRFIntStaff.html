@@ -73,7 +73,7 @@ function myFunction(xml) {
   var xmlDoc = xml.responseXML;
   var x = xmlDoc.getElementsByTagName("record");
   var table="<tr><th>Name</th><th>Surname</th><th>Title</th><th>Clearance</th><th>Sector</th><th>Divsion</th></tr>";
-  var Data = x.type();
+  var Data = typeof x;
   for (i = 0; i <x.length; i++) { 
     table += "<tr><td>" +x[i].getElementsByTagName("FName")[0].childNodes[0].nodeValue +"</td><td>" + x[i].getElementsByTagName("LName")[0].childNodes[0].nodeValue+"</td><td>" 
       + x[i].getElementsByTagName("Title")[0].childNodes[0].nodeValue +"</td><td>" + x[i].getElementsByTagName("Clearence")[0].childNodes[0].nodeValue+"</td><td>" + 
